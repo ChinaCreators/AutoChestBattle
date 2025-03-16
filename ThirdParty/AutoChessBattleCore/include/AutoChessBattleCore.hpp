@@ -17,6 +17,7 @@ namespace AutoChessBattleCore
 		int32_t m_Health = 0;
 		uint32_t m_Traits = 0;
 		const char* m_Name = nullptr;
+		const char* m_ImagePath = nullptr;
 		const char* m_Description = nullptr;
 		const char* m_Details = nullptr;
 		const char* m_Tags = nullptr;
@@ -31,6 +32,7 @@ namespace AutoChessBattleCore
 		int32_t m_Health = 0;
 		uint32_t m_Traits = 0;
 		const char* m_Name = nullptr;
+		const char* m_ImagePath = nullptr;
 		const char* m_Description = nullptr;
 		const char* m_Details = nullptr;
 		const char* m_Tags = nullptr;
@@ -50,6 +52,7 @@ namespace AutoChessBattleCore
 		uint32_t m_Armor = 0;
 		uint32_t m_ShopLevel = 0;
 		const char* m_Name = nullptr;
+		const char* m_ImagePath = nullptr;
 		const char* m_Description = nullptr;
 		uint32_t m_ContinueWinCount = 0;
 		uint32_t m_GoldenMinionCount = 0;

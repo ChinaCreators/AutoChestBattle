@@ -21,11 +21,12 @@ public class AutoChessBattle : ModuleRules
 
 		// To include OnlineSubsystemSteam, add it to the plugins section in your uproject file with the Enabled attribute set to true
 
+		PublicIncludePaths.Add(Path.Combine(ModuleDirectory, "../../ThirdParty/AutoChessBattleCore/include"));
 		// Add this section to include your DLL
 		if (Target.Platform == UnrealTargetPlatform.Win64)
 		{
 			// Path is relative to this .Build.cs file
-			string DllPath = Path.Combine(ModuleDirectory, "../../ThirdParty/AutoChessBattleCore");
+			string DllPath = Path.Combine(ModuleDirectory, "../../ThirdParty/AutoChessBattleCore/bin");
 
 			// This ensures the DLL gets copied to the output directory
 			RuntimeDependencies.Add("$(TargetOutputDir)/AutoChessBattleCore.dll",

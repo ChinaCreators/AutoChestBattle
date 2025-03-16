@@ -16,7 +16,7 @@ void AACBGameMode::BeginPlay()
 	UE_LOG(LogACB, Display, TEXT("ACB GameMode Start"));
 
 	FString dll_path = FPaths::Combine(FPaths::ProjectDir(),
-	                                   TEXT("ThirdParty/AutoChessBattleCore/AutoChessBattleCore.dll"));
+	                                   TEXT("ThirdParty/AutoChessBattleCore/bin/AutoChessBattleCore.dll"));
 	if (FPaths::FileExists(dll_path))
 	{
 		m_DllHandle = FPlatformProcess::GetDllHandle(*dll_path);
